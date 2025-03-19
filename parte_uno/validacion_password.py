@@ -1,4 +1,4 @@
-def validacion(password: str):
+def password_validacion(password: str):
     """
     Valida si una contraseña cumple con los siguientes requisitos:
     - Longitud mínima de 8 caracteres.

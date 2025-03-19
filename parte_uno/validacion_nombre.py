@@ -2,7 +2,7 @@ import re
 
 patron = r"^[a-zA-Z0-9ñÑ]+$"
 
-def validacion(nombre: str):
+def nombre_validacion(nombre: str):
     """
     Valida si un nombre de usuario cumple con los siguientes requisitos:
     - Longitud mínima de 6 caracteres.
