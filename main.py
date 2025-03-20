@@ -1,0 +1,5 @@
+import mi_paquete_electronica
+from mi_paquete_electronica.parte_dos_cuatro.recoger_persona import recoger_datos_persona
+
+
+recoger_datos_persona()
