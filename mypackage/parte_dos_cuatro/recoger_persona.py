@@ -78,13 +78,18 @@ def recoger_datos_persona():
             print("El código postal debe contener 5 dígitos.")
 
     while True:
-        tipo = input("intoruduce tipo: (P: proveedor, C: cliente, T: proveedor y cliente)")
+        tipo = input("Introduce tipo: (P: proveedor, C: cliente, T: proveedor y cliente): ")
         if tipo[0].upper() == "T":
-            datos_personales["codigo_postal"] = "proveedor y cliente"
-        elif tipo[0].upper() == "C":
-            datos_personales["codigo_postal"] = "cliente"
-        elif tipo[0].upper() == "P":
-            datos_personales["codigo_postal"] = "proveedor"
-        else:
+            datos_personales["tipo"] = "proveedor y cliente"
             break
+        elif tipo[0].upper() == "C":
+            datos_personales["tipo"] = "cliente"
+            break
+        elif tipo[0].upper() == "P":
+            datos_personales["tipo"] = "proveedor"
+            break
+        else:
+            print("Entrada no válida. Inténtalo de nuevo.")
+
+
     return datos_personales
