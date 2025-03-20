@@ -1,4 +1,6 @@
 import csv
+from html import unescape
+import re
 from parte_dos_cinco.conexion_odoo import ConexionOdoo
 from parte_dos_cinco.stock_dao import OdooStockDAO
 
@@ -27,13 +29,16 @@ class OdooStock:
         self.listado_productos = [
             {"index": idx, "producto": producto} for idx, producto in enumerate(dict_productos, start=1)
         ]
+    def __limpiar_html(self, texto_html):
+        texto_plano = re.sub(r'<[^>]*>', '', texto_html)
+        return unescape(texto_plano.strip())
 
     def __listar_productos(self):
         """Muestra el listado de productos disponibles."""
         print("\nListado de productos:\n")
         if self.listado_productos:
             for producto in self.listado_productos:
-                print(f"{producto['index']} {producto['producto']['name']}")
+                print(f"{producto['index']} {self.__limpiar_html(producto['producto']['name'])}")
         else:
             print("No se pudo listar productos.")
 
@@ -47,9 +52,9 @@ class OdooStock:
                 producto_base_datos = self.dao.obtener_stock_productos_por_id(producto_seleccionado["id"])
                 if producto_base_datos:
                     print("\nInformación del producto seleccionado:")
-                    print(f"Nombre: {producto_base_datos['name']}")
-                    print(f"Código: {producto_base_datos['default_code']}")
-                    print(f"Descripción: {producto_base_datos['description']}")
+                    print(f"Nombre: {self.__limpiar_html(producto_base_datos['name'])}")
+                    print(f"Código: {self.__limpiar_html(producto_base_datos['default_code'])}")
+                    print(f"Descripción: {self.__limpiar_html(producto_base_datos['description'])}")
                     print(f"Stock actual: {producto_base_datos['qty_available']}")
                 else:
                     print("Error al obtener la información del producto.")
@@ -110,6 +115,8 @@ class OdooStock:
             print(f"\nCSV generado correctamente: {nombre_archivo}")
         except Exception as e:
             print(f"Error al guardar el archivo CSV: {e}")
+
+
 
 
 if __name__ == "__main__":
