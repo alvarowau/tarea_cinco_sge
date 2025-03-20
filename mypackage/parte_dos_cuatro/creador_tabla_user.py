@@ -59,6 +59,7 @@ class DatosTablaUsuario:
         print(f"Población: {persona['poblacion']}")
         print(f"Código Postal: {persona['codigo_postal']}")
         print(f"Página web: {persona['pagina_web'] if persona['pagina_web'] else 'No proporcionada'}")
+        print(f"Tipo: {persona['tipo']}")
         print("-" * 30)
 
     def recoger_datos(self):

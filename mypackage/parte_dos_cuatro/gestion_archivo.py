@@ -29,6 +29,7 @@ def guardar_datos_en_csv(datos, filename="tabla_datos_usuarios.csv"):
                 "pagina_web",
                 "poblacion",
                 "codigo_postal",
+                "tipo",
             ]
             # Crear un escritor CSV
             csv_writer = csv.DictWriter(csv_file, fieldnames=column_names)
