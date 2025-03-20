@@ -1,5 +1,5 @@
-from ..parte_uno.validacion_nombre import nombre_validacion
-from ..parte_uno.validacion_password import password_validacion
+from ..validacion.validacion_nombre import nombre_validacion
+from ..validacion.validacion_password import password_validacion
 
 
 def recoger_datos_persona():
