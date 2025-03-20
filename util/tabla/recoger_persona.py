@@ -14,7 +14,7 @@ def recoger_datos_persona():
         dict: Un diccionario con los datos personales del cliente validados.
     """
     datos_personales = {}
-    print("\nIntroduce los datos del cliente:")
+    print("\n------Introduce los datos del cliente------")
 
     # Recoger datos básicos
     datos_personales["nombre"] = input("Introduce el nombre del cliente: ")
