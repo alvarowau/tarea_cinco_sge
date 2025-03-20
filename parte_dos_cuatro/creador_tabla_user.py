@@ -1,5 +1,5 @@
-from parte_dos.recoger_persona import recoger_datos_persona
-from parte_dos.gestion_archivo import guardar_datos_en_csv, recuperar_datos_desde_csv
+from parte_dos_cuatro.recoger_persona import recoger_datos_persona
+from parte_dos_cuatro.gestion_archivo import guardar_datos_en_csv, recuperar_datos_desde_csv
 
 
 class DatosTablaUsuario:
