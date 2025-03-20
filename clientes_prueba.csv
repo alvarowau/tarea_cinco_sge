@@ -1,0 +1,11 @@
+name;is_company;company_name;zip;city;street;phone;mobile;email;vat
+Marta López Pérez;0;;28010;Madrid;Calle de Alcalá 150;912345678;654321098;marta.lopez@email.es;47654321P
+ElectroTech Solutions SL;1;ElectroTech Solutions SL;08021;Barcelona;Avenida Diagonal 500;931122334;678901234;info@electrotech.es;B98765432
+Javier Ruiz García;0;;46002;Valencia;Gran Vía 10;963334455;601234567;javier.ruiz@otroemail.com;23456789K
+Smart Devices Iberia SA;1;Smart Devices Iberia SA;41001;Sevilla;Calle Sierpes 25;954445566;611223344;comercial@smartdevicesiberia.com;A12345678
+Ana Martínez Sanz;0;;30001;Murcia;Plaza Circular 7;968889900;622334455;ana.martinez@miemail.com;78901234L
+Componentes Electrónicos del Sur SL;1;Componentes Electrónicos del Sur SL;29001;Málaga;Calle Larios 12;952223344;699887766;pedidos@componenteselectronicos.es;B87654321
+Pedro Fernández Gómez;0;;48009;Bilbao;Gran Vía Don Diego López de Haro 45;944445566;644556677;pedro.fernandez@correo.com;56789012M
+Innovación Digital Canarias SL;1;Innovación Digital Canarias SL;35001;Las Palmas de Gran Canaria;Calle Mayor de Triana 80;928112233;688990011;administracion@innovaciondigital.es;C98765432
+Sofía Vargas Torres;0;;07001;Palma de Mallorca;Paseo del Borne 15;971223344;677889900;sofia.vargas@mail.com;34567890N
+Redes y Sistemas Avanzados SA;1;Redes y Sistemas Avanzados SA;15001;A Coruña;Avenida de la Marina 3;981112233;655667788;soporte@redesysistemas.com;A23456789
